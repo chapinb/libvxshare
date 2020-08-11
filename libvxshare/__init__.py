@@ -24,7 +24,7 @@ API is limited on requests per minute and does not provide a counter of remainin
 """
 __name__ = "libvxshare"
 __desc__ = "Unofficial VirusShare API Wrapper"
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 __author__ = "Chapin Bryce"
 __email__ = 'python@chapinb.com'
 __license__ = "MIT"
