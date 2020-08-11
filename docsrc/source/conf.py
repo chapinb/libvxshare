@@ -12,8 +12,8 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../libvxshare'))
-
+sys.path.insert(0, os.path.abspath('../../'))
+print(sys.path[0])
 
 # -- Project information -----------------------------------------------------
 
