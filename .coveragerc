@@ -1,0 +1,5 @@
+[run]
+source = libvxshare
+omit =
+    libvxshare/test/**
+    test*.py
