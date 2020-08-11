@@ -22,7 +22,7 @@ This implementation will not rate limit across threads or processes, only within
 API is limited on requests per minute and does not provide a counter of remaining requests.
 
 """
-__name__ = "LibVXShare"
+__name__ = "libvxshare"
 __desc__ = "Unofficial VirusShare API Wrapper"
 __version__ = "0.1.0"
 __author__ = "Chapin Bryce"
