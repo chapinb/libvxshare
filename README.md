@@ -6,6 +6,10 @@ An unofficial API wrapper for VirusShare.com
 [![Coverage Status](https://coveralls.io/repos/github/chapinb/libvxshare/badge.svg?branch=master)](https://coveralls.io/github/chapinb/libvxshare?branch=master) 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
+## Installation
+
+`pip install libvxshare`
+
 ## Documentation
 
 * Module documentation: https://chapinb.com/libvxshare
