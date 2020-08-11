@@ -21,6 +21,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2.3.2
       name: Checkout
+    - name: Install package
+      run: pip install .
     # Build documentation
     - uses: ammaraskar/sphinx-action@master
       name: Build docs
