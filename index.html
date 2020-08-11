@@ -16,7 +16,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Indices and tables" href="APIv2.html" /> 
+    <link rel="next" title="VirusShare API v2" href="APIv2.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -25,7 +25,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="APIv2.html" title="Indices and tables"
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="APIv2.html" title="VirusShare API v2"
              accesskey="N">next</a> |</li>
         <li class="nav-item nav-item-0"><a href="#">LibVXShare 0.1.0 documentation</a> &#187;</li> 
       </ul>
@@ -41,8 +44,24 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Table of Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="APIv2.html">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIv2.html">VirusShare API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIv2.html#indices-and-tables">Indices and tables</a></li>
 </ul>
+</div>
+<span class="target" id="module-libvxshare"></span><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>VirusShare.com API wrapper</p>
+<p>LibVXShare includes a simple Python interface that wraps the already simple VirusShare API, namely adding support for
+automated rate limiting and conversion of types in to Python data types. More helpers coming soon! Open a ticket
+on GitHub with any requests.</p>
+<p>Official API documentation here: <a class="reference external" href="https://virusshare.com/apiv2_reference">https://virusshare.com/apiv2_reference</a></p>
+<p>This library provides a generic interface for querying and accessing information from VirusShare’s API. This can
+allow for ease of integration in to existing Python frameworks, scripts, and other utilities. That said, it will
+raise an exception for HTTP response codes other than 200 (success) and 204 (rate limiting). Please leverage
+try/except around the library to handle exceptions as required by your implementation.</p>
+<p class="rubric">Notes</p>
+<p>This implementation will not rate limit across threads or processes, only within the same thread. This is because the
+API is limited on requests per minute and does not provide a counter of remaining requests.</p>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
@@ -62,13 +81,16 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">LibVXShare</a></li>
+<li><a class="reference internal" href="#">LibVXShare</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
   <h4>Next topic</h4>
   <p class="topless"><a href="APIv2.html"
-                        title="next chapter">Indices and tables</a></p>
+                        title="next chapter">VirusShare API v2</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -97,7 +119,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="APIv2.html" title="Indices and tables"
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="APIv2.html" title="VirusShare API v2"
              >next</a> |</li>
         <li class="nav-item nav-item-0"><a href="#">LibVXShare 0.1.0 documentation</a> &#187;</li> 
       </ul>
